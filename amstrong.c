@@ -23,3 +23,19 @@ int main() {
 
     return 0;
 }
+/*Alternate
+int n=153;
+int copy=n;
+intc=0;
+while(n>0){
+   c++;
+    n/=10;}
+   n=copy;
+   int sum=0;
+    while (n>0){
+        int digit=n%10;
+        sum+=pow(digit,c);
+        n/=10;
+    }
+    printf((sum==copy)?"Armstrong\n":"Not Armstrong\n");
+*/
