@@ -13,13 +13,7 @@ int main() {
         reverse = reverse * 10 + remainder;
         n = n / 10;
     }
-
-    if (original == reverse) {
-        printf("Palindrome");
-    }
-    else {
-        printf("Not a palindrome");
-    }
-
+    printf((original==reverse)? "palindrome\n" : " not a palindrome\n");
+    
     return 0;
 }
