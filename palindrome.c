@@ -6,7 +6,8 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    original = n;
+    original = n; /*yeh step kafi important hai kyuki loop toh n=0 tak chalegi so if I dont copy 
+    n to another variable palindrome hoke bhi answer nahi hi ayega */
 
     while (n > 0) {
         remainder = n % 10;
@@ -14,6 +15,6 @@ int main() {
         n = n / 10;
     }
     printf((original==reverse)? "palindrome\n" : " not a palindrome\n");
-    
+
     return 0;
 }
