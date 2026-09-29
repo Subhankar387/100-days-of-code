@@ -25,7 +25,9 @@ int main() {
 //     return 0;
 // }
 // Alternate
-int n=1634;
+int n;
+printf("Enter a number: ");
+scanf("%d", &n);
 int copy=n;
 int c=0;
 while(n>0){
