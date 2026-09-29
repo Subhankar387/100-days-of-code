@@ -13,7 +13,7 @@ int main()
         fact = fact * i;
     }
 
-    printf("Factorial = %d", fact);
+    printf("Factorial = %d\n", fact);
 
     return 0;
 }

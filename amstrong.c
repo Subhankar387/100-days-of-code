@@ -1,32 +1,33 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    int n, original, remainder, sum = 0;
+//     int n, original, remainder, sum = 0;
 
-    printf("Enter a number: ");
-    scanf("%d", &n);
+//     printf("Enter a number: ");
+//     scanf("%d", &n);
 
-    original = n;
+//     original = n;
 
-    while (n > 0) {
-        remainder = n % 10;
-        sum = sum + remainder * remainder * remainder;
-        n = n / 10;
-    }
+//     while (n !=0) {
+//         remainder = n % 10;
+//         sum = sum + remainder * remainder * remainder;
+//         n = n / 10;
+//     }
 
-    if (sum == original) {
-        printf("Armstrong number");
-    }
-    else {
-        printf("Not an Armstrong number");
-    }
+//     if (sum == original) {
+//         printf("Armstrong number\n");
+//     }
+//     else {
+//         printf("Not an Armstrong number\n");
+//     }
 
-    return 0;
-}
-/*Alternate
-int n=153;
+//     return 0;
+// }
+// Alternate
+int n=1634;
 int copy=n;
-intc=0;
+int c=0;
 while(n>0){
    c++;
     n/=10;}
@@ -38,4 +39,6 @@ while(n>0){
         n/=10;
     }
     printf((sum==copy)?"Armstrong\n":"Not Armstrong\n");
-*/
+    return 0;
+
+}
